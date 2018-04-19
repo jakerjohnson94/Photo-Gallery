@@ -76,10 +76,52 @@ header {
   border-bottom: var(--head-border);
   border-radius: var(--curved-border);
 }
+<<<<<<< HEAD
 header p {
   font-family: var(--font-arimo);
   font-size: 0.8em;
   white-space: pre-wrap;
+=======
+footer p{ 
+    color: grey;
+    float: right;
+}
+@media (min-width: 0px){
+    #grid-wrap{
+        grid-template-columns:  1fr 1fr;
+    }
+    header {
+        grid-column: 1 / span 2;
+    }
+    [class^="img-"]{
+        width: 100%;
+    }
+
+
+    
+   
+}
+@media (min-width: 460px){
+    #grid-wrap{
+        grid-template-columns:  1fr 1fr;
+    
+    }
+    header {
+        grid-column: 1 / span 2;
+    }
+ 
+}
+
+
+@media (min-width: 720px){
+    #grid-wrap{
+        width: fit-content;
+        grid-template-columns:  1fr 1fr 1fr ;
+    }
+    header{ 
+        grid-column: 1 / span 3;
+    }
+>>>>>>> d71121489440e8f1706519f4a70917cf9521d01b
 }
 footer {
   padding-right: 30px;
