@@ -118,7 +118,7 @@ footer p{
         grid-column: 1 / span 2;
     }
     [class^="img-"]{
-        width: 90%;
+        width: 100%;
     }
 
 
