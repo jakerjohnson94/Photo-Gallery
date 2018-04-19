@@ -3,20 +3,26 @@
     --head-border:2px solid rgb(219, 216, 216);
     --bg-color: rgb(241, 241, 241);
     --border-color: rgb(219, 216, 216);
+    --font-forum: 'Forum', cursive;
+    --font-gloria: 'Gloria Hallelujah', cursive;
+    --font-arimo: 'Arimo', sans-serif;
 }
 
 
 html{
-  
+  margin-top: 50px;
 }
 body{
-    width: 90%;
+  
+   
+  width: 90%;
 margin: auto;
 background-color: var(--bg-color);
 
 }
 
-h1{ font-size: 1.5em;}
+h1{ font-size: 1.8em;
+font-family: var(--font-gloria);}
 
 
 [class^="img-"]{
@@ -25,12 +31,13 @@ h1{ font-size: 1.5em;}
     
 }
 [class^="img-"]:hover{
-    box-shadow: 0px 0px 10px 1px rgba(158, 158, 215, 0.4);
+    box-shadow: 0px 0px 10px 2px rgba(158, 158, 215, 0.5);
 }
 
 #grid-wrap{
-    
+   padding-top: 100px;
      margin: auto;
+     height: 80%;
     width: fit-content;
     justify-content: center;
     align-items: center;
@@ -39,7 +46,7 @@ h1{ font-size: 1.5em;}
     grid-template-columns: 1fr;
     grid-row-gap: .5em;
     grid-column-gap: 1.5em;
-    grid-auto-rows: minmax(100px, auto);
+
 
 
     border: var(--border-color) 1.5px solid;
@@ -60,18 +67,22 @@ header{
     border-radius:  var(--curved-border);
 }
 header p {
+    font-family: var(--font-arimo);
+    font-size: .8em;
     white-space: pre-wrap;
 }
 footer{
-    width: 100%;
-    height: 100%;
+  float: right;
+  padding-right: 30px;
+ 
+
 
 }
 footer p{ 
     color: grey;
-   float: right;
+   
 }
-@media (m-width: 0px){
+@media (min-width: 0px){
     #grid-wrap{
         grid-template-columns:  1fr;
     }
@@ -81,8 +92,7 @@ footer p{
 @media (min-width: 460px){
     #grid-wrap{
         grid-template-columns:  1fr 1fr;
-        padding-left: 50px;
-        padding-right:50px;
+ 
     }
     header {
         grid-column: 1 / span 2;
@@ -90,9 +100,9 @@ footer p{
 }
 
 
-@media (min-width: 800px){
+@media (min-width: 720px){
     #grid-wrap{
-        grid-template-columns:  1fr 1fr 1fr;
+        grid-template-columns:  1fr 1fr 1fr ;
     }
     header{ 
         grid-column: 1 / span 3;
@@ -100,13 +110,14 @@ footer p{
 }
 
 
-@media (min-width: 1000px){
+@media (min-width: 900px){
     #grid-wrap{
-        grid-template-columns:  1fr 1fr 1fr 1fr;
+        grid-template-columns:  1fr 1fr 1fr ;
+        
     }
     header{ 
         grid-column: 1 / span 1;
-        grid-row: 1 / span 4;
+        grid-row: 1 / span 5;
         min-width: 200px;
         max-width: 200px;
         border-bottom: none;
@@ -117,9 +128,24 @@ footer p{
 
 }
 
-@media (min-width: 1300px){
+@media (min-width: 1200px){
     #grid-wrap{
-        grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns:  1fr 1fr 1fr 1fr ;
     }
 
+}
+@media (min-width: 1640px){
+    #grid-wrap{
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+  
+    }
+
+}
+@media (min-width: 1800px){
+    #grid-wrap{
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+  
+    }
+ 
+   
 }
